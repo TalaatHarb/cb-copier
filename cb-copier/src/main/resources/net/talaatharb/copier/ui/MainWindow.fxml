@@ -23,8 +23,8 @@
                   <Button fx:id="connectButton" defaultButton="true" mnemonicParsing="false" onAction="#connect" text="Connect" />
                   <Button fx:id="fetchButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#fetchUsingQuery" text="Execute query" />
                   <Button fx:id="deleteButton" cancelButton="true" disable="true" mnemonicParsing="false" onAction="#deleteWithFilter" text="Delete with filter" />
-                  <Button fx:id="insertButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#insert" text="Insert" />
-                  <Button fx:id="upsertButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#upsert" text="Upsert" />
+                  <Button fx:id="insertButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#insert" text="Insert by same id" />
+                  <Button fx:id="upsertButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#upsert" text="Upsert by same id" />
                </children>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

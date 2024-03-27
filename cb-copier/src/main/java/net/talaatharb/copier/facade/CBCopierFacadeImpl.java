@@ -36,12 +36,12 @@ public class CBCopierFacadeImpl implements CBCopierFacade {
 
 	@Override
 	public boolean insert(JsonNode data) {
-		return copierService.insert(dstTemplate, data);
+		return copierService.insert(dstTemplate, data, srcTemplate.getBucketName());
 	}
 
 	@Override
 	public boolean upsert(JsonNode data) {
-		return copierService.upsert(dstTemplate, data);
+		return copierService.upsert(dstTemplate, data, srcTemplate.getBucketName());
 	}
 
 }

@@ -10,7 +10,7 @@ public interface CBCopierService {
 
 	String fetchUsingQuery(CouchbaseTemplate template, String query);
 
-	boolean insert(CouchbaseTemplate template, JsonNode data);
+	boolean insert(CouchbaseTemplate template, JsonNode data, String oldBucket);
 
-	boolean upsert(CouchbaseTemplate template, JsonNode data);
+	boolean upsert(CouchbaseTemplate template, JsonNode data, String oldBucket);
 }

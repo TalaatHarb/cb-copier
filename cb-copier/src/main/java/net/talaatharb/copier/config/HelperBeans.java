@@ -52,7 +52,7 @@ public class HelperBeans {
 	}
 
 	public static final CBCopierService buildCopierService() {
-		return new CBCopierServiceImpl();
+		return new CBCopierServiceImpl(buildObjectMapper());
 	}
 
 	public static final CBCopierFacade buildCopierFacade(CBConnectionService connectionService,
