@@ -1,8 +1,5 @@
 package net.talaatharb.copier.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -16,28 +13,9 @@ import net.talaatharb.copier.service.CBConnectionServiceImpl;
 import net.talaatharb.copier.service.CBCopierService;
 import net.talaatharb.copier.service.CBCopierServiceImpl;
 
-
-@Configuration
 public class HelperBeans {
 
-	@Bean
-	ObjectMapper objectMapper() {
-		return buildObjectMapper();
-	}
-
-	@Bean
-	CBConnectionService connectionService() {
-		return buildConnectionService();
-	}
-
-	@Bean
-	CBCopierService copierService() {
-		return buildCopierService();
-	}
-
-	@Bean
-	CBCopierFacade copierFacade(CBConnectionService connectionService, CBCopierService copierService) {
-		return buildCopierFacade(connectionService, copierService);
+	private HelperBeans() {
 	}
 
 	public static final ObjectMapper buildObjectMapper() {
