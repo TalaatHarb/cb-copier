@@ -34,7 +34,7 @@
 		<dependency-check-maven.version>9.1.0</dependency-check-maven.version>
 		<maven-pmd-plugin.version>3.22.0</maven-pmd-plugin.version>
 		<!-- Java fx -->
-		<javafx.version>23-ea+3</javafx.version>
+		<javafx.version>23-ea+27</javafx.version>
 		<testfx.version>4.0.18</testfx.version>
 		<monocole.version>21.0.2</monocole.version>
 	</properties>
