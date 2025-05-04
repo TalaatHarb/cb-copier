@@ -39,7 +39,7 @@
                               <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
                                     <Label text="Query:" />
-                                    <TextArea fx:id="queryTextArea" VBox.vgrow="ALWAYS" />
+                                    <TextArea fx:id="queryTextArea" wrapText="true" VBox.vgrow="ALWAYS" />
                                     <Separator prefWidth="200.0" />
                                     <Label text="Filter:" />
                                     <TextField fx:id="filterTextField" text="id like 'to-delete-id'" />

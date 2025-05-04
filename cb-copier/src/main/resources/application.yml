@@ -1,3 +1,13 @@
 logging:
   level[net.talaatharb.copier]: DEBUG
 
+spring:
+  couchbase:
+    env:
+      timeouts:
+        connect: 400000
+        key-value: 400000
+        query: 400000
+        view: 400000
+        search: 400000
+        key-value-durable: 400000
